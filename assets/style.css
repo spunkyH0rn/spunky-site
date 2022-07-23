@@ -1,0 +1,22 @@
+.photo-container{
+  position: relative;
+}
+
+.photo-border{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+
+.photo-content-35{
+  position: absolute;
+  top:154;
+  left:75;
+}
+
+.photo-content-120{
+  position: absolute;
+  top:75;
+  left:75;
+}
