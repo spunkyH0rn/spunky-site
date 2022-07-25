@@ -56,3 +56,12 @@ p{
 	color: white;
 	font-size: 40px;
 }
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: orange 5px auto;
+}
