@@ -1,5 +1,25 @@
+.header{
+	width:850px;
+	margin:auto;
+	padding-top:100px;">
+}
+
 .photo-container{
   position: relative;
+}
+
+.photo-row{
+	display:block;
+	height:650px;
+	margin-top:50px;
+	margin-bottom:50px;	
+}
+
+.photo-item{
+	display:inline-block;
+	width:650px;
+	margin-left:50px;
+	margin-right:50px;	
 }
 
 .photo-border{
