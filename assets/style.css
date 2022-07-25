@@ -15,6 +15,12 @@
   left:75;
 }
 
+.photo-content-35-portrait{
+  position: absolute;
+  top:71;
+  left:158;
+}
+
 .photo-content-120{
   position: absolute;
   top:75;
@@ -23,4 +29,10 @@
 
 a{
 	text-decoration: none;
+}
+
+p{
+	font-family: FreeMono, monospace;
+	color: white;
+	font-size: 40px;
 }
