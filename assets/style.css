@@ -35,7 +35,7 @@
   left:75;
 }
 
-.photo-content-35-portrait{
+.photo-content-35P{
   position: absolute;
   top:71;
   left:158;
@@ -63,5 +63,5 @@ button {
 }
 
 button:focus {
-  outline: orange 5px auto;
+  outline: none;
 }
