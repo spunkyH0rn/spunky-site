@@ -47,6 +47,19 @@
   left:75;
 }
 
+.photo-content-645L{
+  position: absolute;
+  top:138;
+  left:75;
+}
+
+.photo-content-645P{
+  position: absolute;
+  top:72;
+  left:142;
+}
+
+
 a{
 	text-decoration: none;
 }
