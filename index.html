@@ -192,7 +192,7 @@ pages=
 			if( pages[targetPage][i].size == "half" ) {
 			pageBuilderContainer.innerHTML += ' \
 		<div class="photo-row"> \
-			<a href="' + pages[targetPage][i].linkUrl + '" title="Sparks" target="_blank"> \
+			<a href="' + pages[targetPage][i].linkUrl + '" title="' + pages[targetPage][i].altText + '" target="_blank"> \
 			<span class="photo-item"> \
 				<span class="photo-container"> \
 					<img src="assets/' + pages[targetPage][i].format + '_frame.png" class="photo-border"> \
@@ -202,7 +202,7 @@ pages=
 				</span> \
 			</span> \
 			</a> \
-			<a href="' + pages[targetPage][i+1].linkUrl + '" title="Kimi" target="_blank"> \
+			<a href="' + pages[targetPage][i+1].linkUrl + '" title="' + pages[targetPage][i+1].altText + '" target="_blank"> \
 			<span class="photo-item"> \
 				<span class="photo-container"> \
 					<img src="assets/' + pages[targetPage][i+1].format + '_frame.png" class="photo-border"> \
