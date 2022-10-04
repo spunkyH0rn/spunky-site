@@ -1,6 +1,6 @@
 <!-- Live Free or Die. -->
 <html><head>
-		<link rel="stylesheet" href="assets/stylesheet.css">
+		<link rel="stylesheet" href="assets/style.css?1">
 		<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 		<meta name="viewport">
 	</head>
@@ -15,14 +15,16 @@
 	
 	<div class="text-center" >
 		<div class="row">
-			<div class="col-2 d-flex justify-content-start">
-				<button onclick="goPage(-1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png"></button>
+		<div class="col-2 d-flex justify-content-start">
+				<!-- <button onclick="goPage(-1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png" style="filter:opacity(0%)"></button> -->
+				<img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png?1" style="filter:opacity(0%)">
 			</div>
 			<div id="page-builder-container" class="col" style="padding-top: 64px;">
 
 			</div>
-			<div class="col-2 d-flex justify-content-end">
-				<button onclick="goPage(1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png"></button>
+		<div class="col-2 d-flex justify-content-end">
+			<img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png?1" style="filter:opacity(0%)">
+				<!-- <button onclick="goPage(1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png" style="filter:opacity(0%)"></button> -->
 			</div>
 		</div>
 	</div>
@@ -30,8 +32,8 @@
 	<div class="text-center" style="margin-bottom: 32px;">
 		<div class="row">
 			<div class="d-none d-md-inline-block col-md-4"></div>
-			<a class="col-xs-3 col-md-2 smbutton" href="https://twitter.com/SpunkyH0rn" target="_blank"><img src="assets/twitter.png"></a>
-			<a class="col-xs-3 col-md-2 smbutton" href="https://t.me/SpunkyH0rn" target="_blank"><img src="assets/telegram.png"></a>
+			<a class="col-xs-3 col-md-2 smbutton" href="https://twitter.com/SpunkyH0rn" target="_blank"><img src="assets/twitter.png?1"></a>
+			<a class="col-xs-3 col-md-2 smbutton" href="https://t.me/SpunkyH0rn" target="_blank"><img src="assets/telegram.png?1"></a>
 			<div class="d-none d-md-inline-block col-md-4"></div>
 		</div>
 	</div
@@ -180,8 +182,8 @@ pages=
 			<div class="col-xs-12 col-xl-6"> \
 			<a href="' + pages[targetPage][i].linkUrl + '" title="' + pages[targetPage][i].altText + '" target="_blank" class="col photo-item"> \
 				<span class="photo-container"> \
-					<img src="assets/' + pages[targetPage][i].format + '_frame.png" class="photo-border"> \
-					<img src="assets/blank_frame.png" class="photo-border-mask"> \
+					<img src="assets/' + pages[targetPage][i].format + '_frame.png?1" class="photo-border"> \
+					<img src="assets/blank_frame.png?1" class="photo-border-mask"> \
 					<img src="' + pages[targetPage][i].imageUrl + '" ' + dimensions1 + ' class="photo"> \
 				</span> \
 			</a> \
@@ -189,8 +191,8 @@ pages=
 			<div class="col-xs-12 col-xl-6"> \
 			<a href="' + pages[targetPage][i+1].linkUrl + '" title="' + pages[targetPage][i+1].altText + '" target="_blank" class="col photo-item"> \
 				<span class="photo-container"> \
-					<img src="assets/' + pages[targetPage][i+1].format + '_frame.png" class="photo-border"> \
-					<img src="assets/blank_frame.png" class="photo-border-mask"> \
+					<img src="assets/' + pages[targetPage][i+1].format + '_frame.png?1" class="photo-border"> \
+					<img src="assets/blank_frame.png?1" class="photo-border-mask"> \
 					<img src="' + pages[targetPage][i+1].imageUrl + '" ' + dimensions2 + ' class="photo"> \
 				</span> \
 			</a> \
@@ -202,7 +204,7 @@ pages=
 		<a id="photolink0" href="' + pages[targetPage][i].linkUrl + '" title="Kipper" target="_blank"> \
 		<span class="photo-item-full"> \
 			<span class="photo-container"> \
-				<img id="photoframe0" src="assets/' + pages[targetPage][i].format + '_frame.png" class="photo-border"> \
+				<img id="photoframe0" src="assets/' + pages[targetPage][i].format + '_frame.png?1" class="photo-border"> \
 			</span> \
 			<span style="position:relative;"> \
 				<img id="photoimage0" src="' + pages[targetPage][i].imageUrl + '" ' + dimensions + ' class="photo-content-' + pages[targetPage][i].format + '"> \
