@@ -1,71 +1,38 @@
 <!-- Live Free or Die. -->
 <html><head>
-		<link rel="stylesheet" href="assets/style.css?rnd=3">
+		<link rel="stylesheet" href="assets/style.css?rnd=4">
+		<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+		<meta name="viewport">
 	</head>
 	<body style="background-color:darkgrey;">
-	<div style="margin:auto;width:1505px;">
-	<div class="header">
-		<img src="assets/spunky_small_white_shadow.png">
-	</div>
-	<div id="page-builder-container">
-	 	<div class="photo-row">
-			<a href="https://www.flickr.com/photos/195169182@N08/52387709604/in/datetaken/" title="Sparks" target="_blank">
-				<span class="photo-item">
-					<span class="photo-container">
-						<img src="assets/645L_frame.png" class="photo-border">
-					</span>
-					<span class="photo-container">
-						<img src="https://live.staticflickr.com/65535/52387709604_2cbf302183.jpg" class="photo-content-645L">
-					</span>
-				</span>
-			</a>
-			<a href="https://www.flickr.com/photos/195169182@N08/52227497616/in/datetaken/" title="Symphony" target="_blank">
-				<span class="photo-item">
-					<span class="photo-container">
-						<img src="assets/35_frame.png" class="photo-border">
-					</span>
-					<span class="photo-container">
-						<img src="https://live.staticflickr.com/65535/52227497616_386e33ba95.jpg" class="photo-content-35">
-					</span>
-				</span>
-			</a>
+	<!-- <div class="container"> -->
+	<div style="max-width: 1440px; margin-left: auto; margin-right: auto;">
+	<div class="d-flex justify-content-center">
+		<div class="header  row">
+			<div class="col"><img class="spunky" src="assets/spunky_1502.png"></div>
 		</div>
-		<div class="photo-row">
-			<a href="https://www.flickr.com/photos/195169182@N08/52387616644/in/datetaken/" title="Kipper" target="_blank">
-				<span class="photo-item">
-					<span class="photo-container">
-						<img src="assets/645L_frame.png" class="photo-border">
-					</span>
-					<span class="photo-container">
-						<img src="https://live.staticflickr.com/65535/52387616644_759b8c716f.jpg" class="photo-content-645L">
-					</span>
-				</span>
-			</a>
-			<a href="https://www.flickr.com/photos/195169182@N08/52293363515/in/datetaken/" title="Arno" target="_blank">
-				<span class="photo-item">
-					<span class="photo-container"> 
-						<img src="assets/120_frame.png" class="photo-border">
-					</span>
-					<span class="photo-container">
-						<img src="https://live.staticflickr.com/65535/52293363515_ed0f9544e0.jpg" class="photo-content-120">
-					</span>
-				</span>
-			</a>
-		</div> 
 	</div>
 	
-	<div style="width:850px;margin:auto;">
-		<div style="display:block;margin-top:70px;margin-bottom:70px;">
-			 <button onclick="goPage(-1)"><img src="assets/arrow-left.png"></button>
-			<span style="display:inline-block;width:442px"></span>
-			 <button onclick="goPage(1)"><img src="assets/arrow-right.png"></button>
+	<div class="text-center" >
+		<div class="row">
+			<div class="col-2 d-flex justify-content-start">
+				<button onclick="goPage(-1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png"></button>
+			</div>
+			<div id="page-builder-container" class="col" style="padding-top: 64px;">
+
+			</div>
+			<div class="col-2 d-flex justify-content-end">
+				<button onclick="goPage(1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png"></button>
+			</div>
 		</div>
 	</div>
-	<div style="width:608px;margin:auto;">
-		<div style="display:block;margin-top:70px;margin-bottom:70px;">
-			<a href="https://twitter.com/SpunkyH0rn" target="_blank"><img src="assets/twitter.png"></a>
-			<a href="mailto:SpunkyH0rn@protonmail.com"><img src="assets/email-2.png"></a>
-			<a href="https://t.me/SpunkyH0rn" target="_blank"><img src="assets/telegram.png"></a>
+
+	<div class="text-center" style="margin-bottom: 32px;">
+		<div class="row">
+			<div class="d-none d-md-inline-block col-md-4"></div>
+			<a class="col-xs-3 col-md-2 smbutton" href="https://twitter.com/SpunkyH0rn" target="_blank"><img src="assets/twitter.png"></a>
+			<a class="col-xs-3 col-md-2 smbutton" href="https://t.me/SpunkyH0rn" target="_blank"><img src="assets/telegram.png"></a>
+			<div class="d-none d-md-inline-block col-md-4"></div>
 		</div>
 	</div
 </div>
@@ -80,31 +47,39 @@ pages=
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/52387709604/in/datetaken/",
 			"altText":"Sparks",
 			"format":"645L",
-			"size":"half"
+			"size":"half",
+			"x": "384",
+			"y": "280"
 		},
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52227497616_386e33ba95.jpg",
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/52227497616/in/datetaken/",
 			"altText":"Symphony",
 			"format":"35",
-			"size":"half"
+			"size":"half",
+			"x": "384",
+			"y": "256"
 		},
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52387616644_759b8c716f.jpg",
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/52387616644/in/datetaken/",
 			"altText":"Kipper",
 			"format":"645L",
-			"size":"half"
+			"size":"half",
+			"x": "384",
+			"y": "280"
 		},
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52293363515_ed0f9544e0.jpg",
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/52293363515/in/datetaken/",
 			"altText":"Arno",
 			"format":"120",
-			"size":"half"
+			"size":"half",
+			"x": "389",
+			"y": "384"
 		}
 	],
-	[
+/*	[
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52226438723_9d01b8df97_h.jpg",
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/52226438723/in/datetaken/",
@@ -114,7 +89,7 @@ pages=
 			"x":"1172",
 			"y":"1155"
 		}
-	],
+	], */
 	[
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52387741805_187d975a19_c.jpg",
@@ -122,31 +97,37 @@ pages=
 			"altText":"Gali",
 			"format":"645P",
 			"size":"half",
-			"x":"366",
-			"y":"500"
+			"x":"280",
+			"y":"384"
 		},
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/51998676718_61a5b18399.jpg",
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/51998676718/in/datetaken/",
 			"altText":"Crowd",
 			"format":"35",
-			"size":"half"
+			"size":"half",
+			"x": "384",
+			"y": "280"
 		},
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52225439312_3e70816f8b.jpg",
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/52225439312/in/datetaken/",
 			"altText":"AC 2022",
 			"format":"120",
-			"size":"half"
+			"size":"half",
+			"x": "389",
+			"y": "384"
 		},
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52387549523_cf9ec30fbb.jpg",
 			"linkUrl":"https://www.flickr.com/photos/195169182@N08/52387549523/in/datetaken-public/",
 			"altText":"Kipper",
 			"format":"645P",
-			"size":"half"
+			"size":"half",
+			"x":"280",
+			"y":"384"
 		}
-	],
+	]/*,
 	[
 		{
 			"imageUrl":"https://live.staticflickr.com/65535/52387549633_cc92f4d124_h.jpg",
@@ -157,7 +138,7 @@ pages=
 			"x":"846",
 			"y":"1155"
 		}
-	]
+	]*/
 	// 
 ];
 
@@ -185,33 +166,35 @@ pages=
 		
 		target=pages[targetPage];
 		for( i = 0; i < pages[targetPage].length; i=i+2 ) {
-						dimensions=""
+						dimensions1=""
+						dimensions2=""
 				if( pages[targetPage][i].hasOwnProperty("x") ) {
-					dimensions="width=\"" + pages[targetPage][i].x + "px\" height=\"" + pages[targetPage][i].y + "\""
+					dimensions1=" width=\"" + pages[targetPage][i].x + "px\" height=\"" + pages[targetPage][i].y + "\" "
+				}
+				if( pages[targetPage][i+1].hasOwnProperty("x") ) {
+					dimensions2=" width=\"" + pages[targetPage][i+1].x + "px\" height=\"" + pages[targetPage][i+1].y + "\" "
 				}
 			if( pages[targetPage][i].size == "half" ) {
 			pageBuilderContainer.innerHTML += ' \
-		<div class="photo-row"> \
-			<a href="' + pages[targetPage][i].linkUrl + '" title="' + pages[targetPage][i].altText + '" target="_blank"> \
-			<span class="photo-item"> \
+		<div class="row"> \
+			<div class="col-xs-12 col-xl-6"> \
+			<a href="' + pages[targetPage][i].linkUrl + '" title="' + pages[targetPage][i].altText + '" target="_blank" class="col photo-item"> \
 				<span class="photo-container"> \
 					<img src="assets/' + pages[targetPage][i].format + '_frame.png" class="photo-border"> \
+					<img src="assets/blank_frame.png" class="photo-border-mask"> \
+					<img src="' + pages[targetPage][i].imageUrl + '" ' + dimensions1 + ' class="photo"> \
 				</span> \
-				<span class="photo-container"> \
-					<img src="' + pages[targetPage][i].imageUrl + '" ' + dimensions + ' class="photo-content-' + pages[targetPage][i].format + '"> \
-				</span> \
-			</span> \
 			</a> \
-			<a href="' + pages[targetPage][i+1].linkUrl + '" title="' + pages[targetPage][i+1].altText + '" target="_blank"> \
-			<span class="photo-item"> \
+			</div> \
+			<div class="col-xs-12 col-xl-6"> \
+			<a href="' + pages[targetPage][i+1].linkUrl + '" title="' + pages[targetPage][i+1].altText + '" target="_blank" class="col photo-item"> \
 				<span class="photo-container"> \
 					<img src="assets/' + pages[targetPage][i+1].format + '_frame.png" class="photo-border"> \
+					<img src="assets/blank_frame.png" class="photo-border-mask"> \
+					<img src="' + pages[targetPage][i+1].imageUrl + '" ' + dimensions2 + ' class="photo"> \
 				</span> \
-				<span class="photo-container"> \
-					<img src="' + pages[targetPage][i+1].imageUrl + '" class="photo-content-' + pages[targetPage][i+1].format + '"> \
-				</span> \
-			</span> \
 			</a> \
+			</div> \
 		</div> ';
 			} else if( pages[targetPage][i].size = "full" ) {
 				pageBuilderContainer.innerHTML += ' \
@@ -231,4 +214,7 @@ pages=
 
 	}
 
+window.onload = function() {
+  goPage(0);
+};
 </script>
