@@ -1,6 +1,6 @@
 <!-- Live Free or Die. -->
 <html><head>
-		<link rel="stylesheet" href="assets/style.css?1">
+		<link rel="stylesheet" href="assets/style.css?2">
 		<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 		<meta name="viewport">
 	</head>
@@ -9,26 +9,44 @@
 	<div style="max-width: 1440px; margin-left: auto; margin-right: auto;">
 	<div class="d-flex justify-content-center">
 
-		<div class="header  row">
+		<div class="header row">
 			<div class="col"><img class="spunky" src="assets/spunky_1502.png"></div>
 		</div>
 	</div>
 	
-	<div class="text-center" >
-		<div class="row">
-			<div class="col-2 d-flex justify-content-start">
-				<!--<button onclick="goPage(-1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png"></button>-->
-				<img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png?1" style="filter:opacity(0%)">
-			</div>
-			<div id="page-builder-container" class="col" style="padding-top: 64px;">
+	<!-- Begin Navbar -->
+		<!--
+	<div class="text-center spunky-navbar">
+		<p class="barrett">
+			<b><button class="spunky-navbar-link" onclick="goTab('tab-Home')">Home</button>|<button class="spunky-navbar-link" onclick="goTab('tab-ChasingTail')">Chasing Tail</button>|<button class="spunky-navbar-link" onclick="goTab('tab-Rubberfur')">Rubberfur</button></b>
+		</p>
+	</div>
+		-->
+	<!-- End Navbar -->
+	
+	<!-- Begin HOME Tab
+			Contains attract photos
+	-->
+	<div id="tab-Home" class="tab">
+		<div class="text-center" >
+			<div class="row">
+				<div class="col-2 d-flex justify-content-start">
+					<!--<button onclick="goPage(-1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png"></button>-->
+					<img class="arrow d-none d-xxl-inline-block" src="assets/arrow-left.png?1" style="filter:opacity(0%)">
+				</div>
+				<div id="page-builder-container" class="col" style="padding-top: 32px;">
 
-			</div>
-			<div class="col-2 d-flex justify-content-end">
-				<img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png?1" style="filter:opacity(0%)">
-				<!--<button onclick="goPage(1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png"></button>-->
+				</div>
+				<div class="col-2 d-flex justify-content-end">
+					<img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png?1" style="filter:opacity(0%)">
+					<!--<button onclick="goPage(1)" class="align-self-center"><img class="arrow d-none d-xxl-inline-block" src="assets/arrow-right.png"></button>-->
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- End HOME Tab -->
+	
+
 
 	<div class="text-center" style="margin-bottom: 32px;">
 		<div class="row">
@@ -41,7 +59,73 @@
 </div>
 </body>
 <script>
+const urlParams = new URLSearchParams(window.location.search);
 
+const homeTabName = "tab-Home";
+
+<!-- Begin Tabbing system -->
+	// Argument is a string denoting the ID of the target tab
+	// May NOT navigate to tab with ID not matching "tab-${target}"
+	// May NOT navigate to a tab that doesn't exist
+	function goTab(target) {
+		// Target must be in format "tab-${target}"
+		// Failure to comply... Gets you sent HOME for the day
+		tabNameRegex = new RegExp("tab-([A-Z]+)");
+		
+		if( target.match(tabNameRegex) == null )
+		{
+			target = homeTabName;
+		}
+
+		// Enumerate all of the tabs, ensure all are display:none
+		var allTabs = document.getElementsByClassName("tab");
+		for( var i = 0, n = allTabs.length; i < n; ++i) {
+			allTabs[i].style.display = "none";
+		}
+
+		// Display the chosen tab
+		
+		var tabTarget = document.getElementById(target);
+		
+		// If the target tab doesn't exist, just set the target to home
+		if ( tabTarget == null ) {
+			var tabTarget = document.getElementById(homeTabName);
+			console.log("Nice try, but that tab doesn't exist! Going HOME instead.");
+		}
+		
+		tabTarget.style.display = "block";
+		
+		// Add tab's name to URL target parameter
+		
+		// Get the "short name" by cutting off the "tab-"
+		shortTarget = target.split("-")[1];
+		
+		thisURL = new URL(window.location.href);
+		thisURL.searchParams.set("target", shortTarget);
+		
+		window.history.pushState("id","id",thisURL);
+	}
+<!-- End Tabbing system -->
+
+<!-- Begin Nav Tab -->
+	// Navigate to tab in URL
+	// Tab selected will be a short name ("HOME" instead of "tab-HOME")
+	
+	// Let's see what the target is according to the URL
+	tabTarget = urlParams.get('target');
+		
+	console.log("Got URL target " + tabTarget);
+		
+	// No target, go home
+	if( tabTarget == null ) {
+		goTab(homeTabName);
+	}
+		
+	// We have a target, let's try navigating to it
+	goTab("tab-" + tabTarget);
+<!-- End Nav Tab -->
+
+<!-- Begin "Home" pagination -->
 pages=
 [
 	[
@@ -137,6 +221,7 @@ pages=
 
 	// let's implement that "scrolling" feature
 	// lord help us
+	// This could use a refactor!
 	currentPage=0;
 	numPages=pages.length-1;
 	
@@ -209,4 +294,7 @@ pages=
 window.onload = function() {
   goPage(0);
 };
+
+<!-- End "Home" pagination -->
+
 </script>
