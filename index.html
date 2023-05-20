@@ -1,6 +1,6 @@
 <!-- Live Free or Die. -->
 <html><head>
-		<link rel="stylesheet" href="assets/style.css?2">
+		<link rel="stylesheet" href="assets/style.css?3">
 		<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 		<meta name="viewport">
 	</head>
@@ -10,7 +10,11 @@
 	<div class="d-flex justify-content-center">
 
 		<div class="header row">
-			<div class="col"><img class="spunky" src="assets/spunky_1502.png"></div>
+			<div class="col">
+				<button onclick="goTab('tab-Home')">
+					<img class="spunky" src="assets/spunky_1502.png">
+				</button>
+			</div>
 		</div>
 	</div>
 	
@@ -31,55 +35,99 @@
 	<div id="tab-Home" class="tab">
 		<div class="text-center" >
 			<div class="row">
-				<div class="col-2 d-flex justify-content-start">
+				<div class="col-1 d-none d-lg-flex justify-content-start">
 				</div>
-				<div class="col" style="padding-top: 32px;"> 	
 				
-				
+				<!-- Desktop view -->
+				<div class="col d-none d-lg-block" style="padding-top: 32px;"> 	
 					<div class="row"> 
-						<div class="col-xs-12 col-xl-6">
+						<div class="col-6">
 							<a href="https://www.flickr.com/photos/195169182@N08/52827349662/in/datetaken/" title="Rigel Xiros" target="_blank" class="col photo-item">
 								<span class="photo-container">
-									<img src="assets/8x10p_frame.png?1" class="photo-border">
-									<img src="assets/blank_frame.png?1" class="photo-border-mask">
+									<img src="assets/frames/8x10p_frame.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame.png?2" class="photo-border-mask">
 									<img src="https://live.staticflickr.com/65535/52827987571_09796354fd.jpg" class="photo" width="307px" height="384">
 								</span>
 							</a>
 						</div>
-						<div class="col-xs-12 col-xl-6">
+						<div class="col-6">
 							<a href="https://www.flickr.com/photos/195169182@N08/52572587635/in/datetaken-public/" title="Fwanky" target="_blank" class="col photo-item">
 								<span class="photo-container">
-									<img src="assets/8x10p_frame.png?1" class="photo-border">
-									<img src="assets/blank_frame.png?1" class="photo-border-mask">
+									<img src="assets/frames/8x10p_frame.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame.png?2" class="photo-border-mask">
 									<img src="https://live.staticflickr.com/65535/52572587635_e0a2f26bc1.jpg" class="photo" width="307px" height="384">
 								</span>
 							</a>
 						</div>
 					</div> 
 					<div class="row">
-						<div class="col-xs-12 col-xl-6">
+						<div class="col-6">
 							<a href="https://www.flickr.com/photos/195169182@N08/52776929647/in/datetaken/" title="Caesar" target="_blank" class="col photo-item">
 								<span class="photo-container">
-									<img src="assets/8x10p_frame.png?1" class="photo-border">
-									<img src="assets/blank_frame.png?1" class="photo-border-mask">
+									<img src="assets/frames/8x10p_frame.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame.png?2" class="photo-border-mask">
 									<img src="https://live.staticflickr.com/65535/52828394525_cf0343a8db.jpg" class="photo" width="307px" height="384">
 								</span>
 							</a>
 						</div>
-						<div class="col-xs-12 col-xl-6">
+						<div class="col-6">
 							<a href="https://www.flickr.com/photos/195169182@N08/52852330104/in/datetaken/" title="Lekida" target="_blank" class="col photo-item">
 								<span class="photo-container">
-									<img src="assets/35P_frame.png?1" class="photo-border">
-									<img src="assets/blank_frame.png?1" class="photo-border-mask">
+									<img src="assets/frames/35p_frame.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame.png?2" class="photo-border-mask">
 									<img src="https://live.staticflickr.com/65535/52852330104_55b57c1a21.jpg" class="photo" width="257px" height="384">
 								</span>
 							</a>
 						</div>
 					</div>
 				</div>
+				<!-- End desktop view -->
+				
+				<!-- Mobile view -->
+				<div class="col d-block d-lg-none" style="padding-top: 32px;">
+					<div class="row">
+						<div class="col-12">
+							<a href="https://www.flickr.com/photos/195169182@N08/52827349662/in/datetaken/" title="Rigel Xiros" target="_blank" class="col photo-item-mobile">
+								<span class="photo-container">
+									<img src="assets/frames/8x10p_frame_large.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame_large.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52827987571_09796354fd.jpg" class="photo" width="400px" height="500">
+								</span>
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="https://www.flickr.com/photos/195169182@N08/52572587635/in/datetaken-public/" title="Fwanky" target="_blank" class="col photo-item-mobile">
+								<span class="photo-container">
+									<img src="assets/frames/8x10p_frame_large.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame_large.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52572587635_e0a2f26bc1.jpg" class="photo" width="400px" height="500">
+								</span>
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="https://www.flickr.com/photos/195169182@N08/52776929647/in/datetaken/" title="Caesar" target="_blank" class="col photo-item-mobile">
+								<span class="photo-container">
+									<img src="assets/frames/8x10p_frame_large.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame_large.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52828394525_cf0343a8db.jpg" class="photo" width="400px" height="500">
+								</span>
+							</a>
+						</div>
+						<div class="col-12">
+							<a href="https://www.flickr.com/photos/195169182@N08/52852330104/in/datetaken/" title="Lekida" target="_blank" class="col photo-item-mobile">
+								<span class="photo-container">
+									<img src="assets/frames/35p_frame_large.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame_large.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52852330104_55b57c1a21.jpg" class="photo" width="334px" height="500">
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- End mobile view -->
 				
 				
-				<div class="col-2 d-flex justify-content-end">
+				<div class="col-1 d-none d-lg-flex justify-content-end">
 				</div>
 			</div>
 		</div>
@@ -134,6 +182,9 @@ const urlParams = new URLSearchParams(window.location.search);
 const homeTabName = "tab-Home";
 
 <!-- Begin Tabbing system -->
+
+	// Tabs are declared by creating an element with the class "tab" and an id in the format "tab-Name"
+
 	// Argument is a string denoting the ID of the target tab
 	// May NOT navigate to tab with ID not matching "tab-${target}"
 	// May NOT navigate to a tab that doesn't exist
