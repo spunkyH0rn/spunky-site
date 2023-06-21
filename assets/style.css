@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Barrett;
-    src: url("./barrer.ttf") format("truetype");
+	font-family: Barrett;
+	src: url("./barrer.ttf") format("truetype");
 }
 
 .photo-row{
@@ -47,7 +47,7 @@
 	grid-column: 1;
 	grid-row: 1;
 	z-index:8;
-	filter: drop-shadow(12px 8px 8px #555555);
+	filter: drop-shadow(12px 8px 8px #444444);
 }
 
 .photo{
@@ -61,14 +61,26 @@
 	place-items: center;
 }
 
+.body-container{
+	max-width:1200px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.cover-text{
+	max-width:600px;
+	width:90%;
+	margin:auto;
+}
+
 .arrow{
-	filter: drop-shadow(12px 8px 8px #555555);
+	filter: drop-shadow(12px 8px 8px #444444);
 }
 
 .spunky{
 	display: flex;
 	padding-top: 48px;
-	filter: drop-shadow(12px 8px 8px #555555);
+	filter: drop-shadow(12px 8px 8px #444444);
 }
 
 .header{
@@ -77,32 +89,42 @@
 
 .smbutton{
 	padding: 12px;
-	filter: drop-shadow(12px 8px 8px #555555);
+	filter: drop-shadow(12px 8px 8px #444444);
 }
 
 .spunky-navbar{
 	padding-top: 24px;
+	font-size: 40px;
+	text-decoration: none;
+	color: white;
+}
+
+.spunky-contact{
+	font-size: 32px;
+	text-decoration: none;
+	color: white;
 }
 
 button.spunky-navbar-link{
-	filter: drop-shadow(12px 8px 8px #555555);
-	font-size: 36px;
-	text-decoration: none;
-	color: white;
+	filter: drop-shadow(12px 8px 8px #444444);
 	
 	padding-left: 12px;
 	padding-right: 12px;
 }
 
-a{
+a.photo-item{
 	text-decoration: none;
 	font-size: 0px;
 }
 
+a, a:focus, a:active{
+	color:white !important;
+}
+
 p{
-	font-family: FreeMono, monospace;
+	font-family: Barrett;
 	color: white;
-	font-size: 40px;
+	font-size: 24px;
 }
 
 button {

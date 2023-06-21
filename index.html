@@ -1,10 +1,10 @@
 <!-- Live Free or Die. -->
 <html><head>
-		<link rel="stylesheet" href="assets/style.css?3">
+		<link rel="stylesheet" href="assets/style.css?4">
 		<link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
 		<meta name="viewport">
 	</head>
-	<body style="background-color:darkgrey;">
+	<body style="background-color:grey;">
 	<!-- <div class="container"> -->
 	<div style="max-width: 1440px; margin-left: auto; margin-right: auto;">
 	<div class="d-flex justify-content-center">
@@ -18,13 +18,11 @@
 	</div>
 	
 	<!-- Begin Navbar -->
-	<!--
 	<div class="text-center spunky-navbar">
-		<p class="barrett">
-			<b><button class="spunky-navbar-link" onclick="goTab('tab-Home')">Home</button>|<button class="spunky-navbar-link" onclick="goTab('tab-ChasingTail')">Chasing Tail</button>|<button class="spunky-navbar-link" onclick="goTab('tab-Rubberfur')">Rubberfur</button></b>
-		</p>
+		<div class="barrett">
+			<b><button class="spunky-navbar-link" id="navbar-tab-Home" onclick="goTab('tab-Home')">Home</button>|<button class="spunky-navbar-link" id="navbar-tab-GetPhotos" onclick="goTab('tab-GetPhotos')">Get Photos</button>|<button class="spunky-navbar-link" id="navbar-tab-Contact" onclick="goTab('tab-Contact')">Contact</button></b>
+		</div>
 	</div>
-	-->
 	<!-- End Navbar -->
 
 	
@@ -149,22 +147,168 @@
 	-->
 	<!-- End Chasing Tail Tab -->
 	
-	<!-- Begin Rubberfur Tab
-			Contains information about Rubberfur
+	<!-- Begin Hire Me Tab
+			Commission info
 	-->
-	<!--
-	<div id="tab-Rubberfur" class="tab" style="display:none;">
-		<div class="text-center">
+	<div id="tab-GetPhotos" class="tab" style="display:none;">
+		<div class="text-center body-container">
 			<div class="row">
-				<p class="barrett">
-					Rubberfur Tab
-				</p>
+				<div class="col">
+					<div class="row" style="padding-top: 64px;">
+						<p class="scaling-tagline" style="font-size:40px;"><b>Give your character the photos they deserve.</b></p>
+						<p style="font-size:32px;"><b>Available Anthrocon and TFS 2023. Starting at $80.</b></p>
+					</div>
+					<div class="row" style="padding-top: 64px;">
+						
+						<!-- FIRST ROW -->
+						<!-- Large image for XL and mobile displays -->
+						<div class="col-xl-7 col-12 d-lg-none d-flex d-xl-flex">
+							<a href="https://www.flickr.com/photos/195169182@N08/52977692318/in/datetaken/" title="Sterling Silvur" target="_blank" class="col photo-item-mobile">
+								<span class="photo-container">
+									<img src="assets/frames/8x10p_frame_large.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame_large.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52977692318_f393274e4d_c.jpg" class="photo" width="400px" height="500">
+								</span>
+							</a>
+						</div>
+						<!-- End large image -->
+						<!-- Medium image for L displays -->
+						<div class="col-lg-6 d-none d-lg-flex d-xl-none">
+							<a href="https://www.flickr.com/photos/195169182@N08/52977692318/in/datetaken/" title="Sterling Silvur" target="_blank" class="col photo-item">
+								<span class="photo-container">
+									<img src="assets/frames/8x10p_frame.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52977692318_f393274e4d_c.jpg" class="photo" width="307px" height="384">
+								</span>
+							</a>
+						</div>
+						<!-- End medium image -->
+						
+						<!-- Text box -->
+						<div class="col-xl-5 col-lg-6 col-12">
+							<div class="cover-text" style="padding-bottom: 32px;">
+								<p style="font-size:32px;text-align:left;"><b>&emsp;Get colourful, expressive photos in your fursuit at your next con, all shot on film. You will receive no fewer than 5 print-quality photos.</b></p>
+								<p style="font-size:32px;text-align:left;"><b>&emsp;Please contact me about availability in the DFW and Ark-La-Tex areas!</b></p>
+								<p style="font-size:32px;text-align:left;"><b>&emsp;Drop me a line on Telegram - <a href="https://t.me/SpunkyH0rn" target="_blank">@SpunkyH0rn</a></b></p>
+							</div>
+						</div>
+						<!-- End text box -->
+						<!-- END FIRST ROW -->
+						
+					</div>
+					<!--
+					<div class="row">
+						
+						<!-- SECOND ROW -->
+						<!-- Test box -->
+						<!--
+						<div class="col-xl-5 col-lg-6 col-12">
+							<div class="cover-text" style="padding-bottom: 32px;">
+								<p style="font-size:32px;"><b>Tagline to get the user's<br><u>undivided attention</u>!</b></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vulputate mi sit amet mauris. Enim lobortis scelerisque fermentum dui. Pellentesque diam volutpat commodo sed. Aliquam sem et tortor consequat id. Consequat mauris nunc congue nisi. Quam elementum pulvinar etiam non quam lacus.</p>
+							</div>
+						</div>
+						-->
+						<!-- End text box -->
+						
+						<!-- Medium image for L displays -->
+						<!--
+						<div class="col-lg-6 d-none d-lg-flex d-xl-none">
+							<a href="https://www.flickr.com/photos/195169182@N08/52936076905/in/datetaken/" title="Firra" target="_blank" class="col photo-item">
+								<span class="photo-container">
+									<img src="assets/frames/8x10p_frame.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52936076905_6608a1b373_c.jpg" class="photo" width="307px" height="384">
+								</span>
+							</a>
+						</div>
+						-->
+						<!-- End medium image -->
+						
+						<!-- Large image for XL and mobile displays -->
+						<!--
+						<div class="col-xl-7 col-12 d-lg-none d-flex d-xl-flex">
+							<a href="https://www.flickr.com/photos/195169182@N08/52936076905/in/datetaken/" title="Firra" target="_blank" class="col photo-item-mobile">
+								<span class="photo-container">
+									<img src="assets/frames/8x10p_frame_large.png?2" class="photo-border">
+									<img src="assets/frames/blank_frame_large.png?2" class="photo-border-mask">
+									<img src="https://live.staticflickr.com/65535/52936076905_6608a1b373_c.jpg" class="photo" width="400px" height="500">
+								</span>
+							</a>
+						</div>
+						-->
+						<!-- End large image -->
+						<!-- END SECOND ROW -->
+					<!--
+					</div> 
+					-->
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- End Hire Me Tab -->
+		
+	<!-- Begin Contact Tab
+			Contact information
 	-->
-	<!-- End Rubberfur Tab -->
+	<div id="tab-Contact" class="tab barrett" style="display:none;">
+		<div class="text-center">
+			<div class="row" style="padding-top:64px;padding-bottom:64px;">
+				<div class="col">
+					<div class="spunky-contact" style="width:500px;margin-left:auto;margin-right:auto;padding-left:24px;padding-right:24px;">
+						
+						<!-- Telegram -->
+						<div class="row">
+							<div class="col-5" style="text-align:left;">
+								Telegram
+							</div>
+							<div class="col-7" style="text-align:right;">
+								<a href="https://t.me/SpunkyH0rn" target="_blank">@SpunkyH0rn</a>
+							</div>
+						</div>
+						<!-- End Telegram -->
+						
+						<!-- Twitter -->
+						<div class="row">
+							<div class="col-5" style="text-align:left;">
+								Twitter
+							</div>
+							<div class="col-7" style="text-align:right;">
+								<a href="https://twitter.com/SpunkyH0rn" target="_blank">@SpunkyH0rn</a>
+							</div>
+						</div>
+						<!-- End Twitter -->
+						
+						<!-- FurAffinity -->
+						<div class="row">
+							<div class="col-5" style="text-align:left;">
+								FurAffinity
+							</div>
+							<div class="col-7" style="text-align:right;">
+								<a href="https://www.furaffinity.net/user/spunkyh0rn/" target="_blank">spunky_h0rn</a>
+							</div>
+						</div>
+						<!-- End FurAffinity -->
+						
+						<!-- Chasing Tail -->
+						<div class="row">
+							<div class="col-5" style="text-align:left;">
+								Chasing Tail
+							</div>
+							<div class="col-7" style="text-align:right;">
+								<a href="https://chasingtailmag.com/" target="_blank">chasingtailmag.com</a>
+							</div>
+						</div>
+						<!-- End Chasing Tail -->
 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact Tab -->
+
+	<!-- Links -->
 	<div class="text-center" style="margin-bottom: 32px;">
 		<div class="row">
 			<div class="d-none d-md-inline-block col-md-4"></div>
@@ -172,7 +316,8 @@
 			<a class="col-xs-3 col-md-2 smbutton" href="https://t.me/SpunkyH0rn" target="_blank"><img src="assets/telegram.png?1"></a>
 			<div class="d-none d-md-inline-block col-md-4"></div>
 		</div>
-	</div
+	</div>
+	<!-- End links -->
 </div>
 </body>
 <script>
