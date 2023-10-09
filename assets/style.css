@@ -108,6 +108,16 @@
 	color: white;
 }
 
+.spunky-projects{
+	font-size: 32px;
+	text-decoration: none;
+	color: white;
+}
+
+.projects-entry{
+	padding-bottom:48px;
+}
+
 button.spunky-navbar-link{
 	filter: drop-shadow(12px 8px 8px #444444);
 	
