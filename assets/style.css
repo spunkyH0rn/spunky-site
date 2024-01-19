@@ -1,154 +1,39 @@
 @font-face {
-	font-family: Barrett;
-	src: url("./barrer.ttf") format("truetype");
+	font-family:Goudy;
+	src: url("../webfonts/Goudy.otf") format("truetype");
 }
 
-.photo-row{
-	display:block;
-	height:650px;
-	width: 1344px;
-	margin-top:0px;
-	margin-bottom:12px;	
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.photo-row-full{
-	display:block;
-	height: 1312px;
-	width: 1344px;
-	margin-top:0px;
-	margin-bottom:12px;	
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.photo-item{
-	width:420px;
-	height: 420px;
-	display: inline-block;
-	margin-bottom: 24px;
-}
-
-.photo-item-mobile{
-	width:546px;
-	height: 546px;
-	display: inline-block;
-	margin-bottom: 48px;
-}
-
-.photo-border{
-	grid-column: 1;
-	grid-row: 1;
-	z-index:10;
-}
-
-.photo-border-mask{
-	grid-column: 1;
-	grid-row: 1;
-	z-index:8;
-	filter: drop-shadow(12px 8px 8px #444444);
-}
-
-.photo{
-	grid-column: 1;
-	grid-row: 1;
-	z-index:9;
-}
-
-.photo-container{
-	display: grid;
-	place-items: center;
-}
-
-.body-container{
-	max-width:1200px;
-	margin-left:auto;
-	margin-right: auto;
-}
-
-.cover-text{
-	max-width:600px;
-	width:90%;
-	margin:auto;
-}
-
-.arrow{
-	filter: drop-shadow(12px 8px 8px #444444);
-}
-
-.spunky{
-	display: flex;
-	padding-top: 48px;
-	filter: drop-shadow(12px 8px 8px #444444);
-}
-
-.header{
-
-}
-
-.smbutton{
-	padding: 12px;
-	filter: drop-shadow(12px 8px 8px #444444);
-}
-
-.spunky-navbar{
-	padding-top: 24px;
-	font-size: 40px;
-	text-decoration: none;
+body {
+	background-color: black;
 	
-	user-select: none;
 	
-	color: white;
-}
-
-.spunky-contact{
-	font-size: 32px;
-	text-decoration: none;
-	color: white;
-}
-
-.spunky-projects{
-	font-size: 32px;
-	text-decoration: none;
-	color: white;
-}
-
-.projects-entry{
-	padding-bottom:48px;
-}
-
-button.spunky-navbar-link{
-	filter: drop-shadow(12px 8px 8px #444444);
+	font-family:Goudy;
 	
-	padding-left: 12px;
-	padding-right: 12px;
+	color:white;
+	
 }
 
-a.photo-item{
-	text-decoration: none;
-	font-size: 0px;
+p {
+	font-size:20px;
 }
 
-a, a:focus, a:active{
-	color:white !important;
+a {
+	font-size:20px;
+	color: white !important;
 }
 
-p{
-	font-family: Barrett;
-	color: white;
-	font-size: 24px;
+.content {
+	font-size:20px;
 }
 
-button {
-	all: unset;
-	cursor: pointer;
+.navbar {
+	font-size:20px;
 }
 
-button:focus {
-	outline: none;
-}
-
-.barrett {
-	font-family: Barrett;
+.spunky {
+	width:100%;
+	height:200px;
+	background-image: url('../webgrafx/spunkyt.gif');
+	background-repeat: no-repeat;
+	background-position: center;
 }
