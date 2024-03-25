@@ -37,3 +37,41 @@ a {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+
+.main-table {
+	background-image: url('../webgrafx/tbumper.gif'), url('../webgrafx/footer.gif');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top, bottom;
+}
+
+.gallery-table td {
+	width:160px;
+	height:160px;
+}
+
+.gallery-nav td {
+	width:160px;
+	height:100px;
+}
+
+.gallery-table, .gallery-nav a {
+	line-height: 0;
+}
+
+
+
+.gallery-table-full td {
+	border: 2px solid #cfcfcf;
+	border-radius: 1px;
+}
+
+.gallery-table-full {
+}
+
+input, select, textarea {
+  border: 2px solid #cfcfcf;
+  border-radius: 1px;
+  
+  color:white;
+  background-color:black;
+}
